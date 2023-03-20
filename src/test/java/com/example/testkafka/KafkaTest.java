@@ -12,6 +12,7 @@ public class KafkaTest {
 
     @Test
     public void test01(){
+
         System.out.println(kafkaProperties);
     }
 }
