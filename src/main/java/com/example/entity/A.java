@@ -1,11 +1,11 @@
 package com.example.entity;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@Data
+@NoArgsConstructor
 public class A {
     private Integer a;
 

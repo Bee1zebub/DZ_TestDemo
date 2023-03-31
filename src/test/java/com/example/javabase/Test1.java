@@ -1,10 +1,12 @@
 package com.example.javabase;
 
-import com.example.entity.A;
 import org.junit.Test;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Test1 {
 
@@ -63,6 +65,35 @@ public class Test1 {
                     break;
                 }
             }
+        }
+        // 修改位置
+         // 修改位置2
+    }
+
+    @Test
+    public void test4(){
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("Java入门教程", "http://c.biancheng.net/java/");
+        map.put("C语言入门教程", "http://c.biancheng.net/c/");
+        for(Map.Entry<String,String> entry : map.entrySet()){
+            entry.getKey();
+            entry.getValue();
+        }
+        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+        if(iterator.hasNext()){
+            Map.Entry<String, String> next = iterator.next();
+            next.getKey();
+            next.getValue();
+        }
+    }
+
+    @Test
+    public void test5(){
+        boolean a = true;
+        boolean b = true;
+        boolean c =true;
+        if(a){
+            System.out.println(a);
         }
     }
 }

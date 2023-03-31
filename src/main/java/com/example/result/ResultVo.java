@@ -1,21 +1,20 @@
 package com.example.result;
 
-import com.alibaba.fastjson.JSONObject;
-import org.junit.platform.commons.util.StringUtils;
+import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class ResultVo {
-    public static void main(String[] args) {
-//        if(StringUtils.isNotBlank("ff")){
-//            String cmy = String.format("This is %s", "cmy");
-//            System.out.println(cmy);
-//        }
-        ArrayList<Object> objects = new ArrayList<>();
-        System.out.println(objects);
-        if (objects != null) {
-            String s = JSONObject.toJSONString(objects);
-            System.out.println(s);
-        }
+@Data
+public class ResultVo<T> {
+
+    private Integer code = 200;
+    private List<String> message = new ArrayList<>();
+    private T data;
+
+    public ResultVo(){
+
     }
+
+
 }
