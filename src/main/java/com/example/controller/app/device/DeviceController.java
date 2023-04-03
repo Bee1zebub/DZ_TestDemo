@@ -1,7 +1,9 @@
 package com.example.controller.app.device;
 
 import com.example.constant.SwaggerConstant;
+import com.example.dto.app.device.response.DeviceListResponse;
 import com.example.result.ResultVo;
+import com.example.utils.PageUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -18,5 +20,7 @@ public class DeviceController {
     //@Log(value = "记录获取设备列表操作日志",logType = 2,operationType = 3,module = 1)
     @ApiOperation(value = "设备列表", notes = "设备列表接口")
     @PostMapping("{version}/deviceList")
-    public ResultVo<PageUtil>
+    public ResultVo<PageUtil<DeviceListResponse>> devicePage(){
+        return null;
+    }
 }
