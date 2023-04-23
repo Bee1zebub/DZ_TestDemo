@@ -45,6 +45,26 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>alibaba-dingtalk-service-sdk</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+                <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>dingtalk</artifactId>
+            <version>1.5.65</version>
+        </dependency>
+
+<!--        &lt;!&ndash;钉钉工具包&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.taobao.top</groupId>-->
+<!--            <artifactId>top-api-sdk-dev</artifactId>-->
+<!--            <version>ding-open-mc-SNAPSHOT</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/dingtalk-1.5.65.jar</systemPath>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>
